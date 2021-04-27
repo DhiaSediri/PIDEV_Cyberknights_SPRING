@@ -27,6 +27,8 @@ public class Mail {
 		properties.put("mail.smtp.host", "smtp.gmail.com");
 		properties.put("mail.smtp.port", "587");
 		
+		properties.put("mail.smtp.ssl.trust", "smtp.gmail.com");
+		
 		String myAccountEmail = "sediridhia@gmail.com";
 		String password = "dhia;789321456";
 		
@@ -49,14 +51,14 @@ public class Mail {
 		try {
 			message.setFrom(new InternetAddress(myAccountEmail));
 			message.setRecipient(Message.RecipientType.TO, new InternetAddress(recepient));
-			message.setSubject("My first Email from JAVA APP");
+			message.setSubject("Facture d'achat ConsommiTounsi");
 			//message.setText("Hey there, \n Look my email !");
 			
 			Multipart emailContent = new MimeMultipart();
 			
 			//Text Body Part
 			MimeBodyPart textBodyPart = new MimeBodyPart();
-			textBodyPart.setText("My multipart text");
+			textBodyPart.setText("ConsommiTounsi");
 			
 			//Attachement Body Part
 			MimeBodyPart pdfAttachement = new MimeBodyPart();

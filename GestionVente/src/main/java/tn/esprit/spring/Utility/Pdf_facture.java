@@ -37,7 +37,7 @@ public class Pdf_facture {
 			document.add(image);
 
 			document.add(new Paragraph(" "));
-			Paragraph p3 = new Paragraph("A Tunis le 2021/04/01");
+			Paragraph p3 = new Paragraph("A Tunis le 2021/04/28");
 			p3.setAlignment(Paragraph.ALIGN_RIGHT);
 			document.add(p3);
 			document.add(new Paragraph(" "));
@@ -51,12 +51,12 @@ public class Pdf_facture {
 
 			PdfPCell cell1;
 
-			cell1 = new PdfPCell(new Phrase("Les Produits", FontFactory.getFont("Comic Sans MS", 11)));
+			cell1 = new PdfPCell(new Phrase("Articles", FontFactory.getFont("Comic Sans MS", 11)));
 			cell1.setHorizontalAlignment(Element.ALIGN_CENTER);
 			cell1.setBackgroundColor(BaseColor.GRAY);
 			tableDetailsCommande.addCell(cell1);
 
-			cell1 = new PdfPCell(new Phrase("Quantité demandée", FontFactory.getFont("Comic Sans MS", 11)));
+			cell1 = new PdfPCell(new Phrase("Quantité", FontFactory.getFont("Comic Sans MS", 11)));
 			cell1.setHorizontalAlignment(Element.ALIGN_CENTER);
 			cell1.setBackgroundColor(BaseColor.GRAY);
 			tableDetailsCommande.addCell(cell1);
@@ -78,27 +78,27 @@ public class Pdf_facture {
 
 			///////////////////////////////////////////////////////////////////////////////////////////////////
 
-			cell1 = new PdfPCell(new Phrase("chaise, table", FontFactory.getFont("Arial", 11)));
+			cell1 = new PdfPCell(new Phrase("Chemise ZARA, Table TV, Service fruits", FontFactory.getFont("Arial", 11)));
 			cell1.setHorizontalAlignment(Element.ALIGN_CENTER);
 			cell1.setBackgroundColor(BaseColor.LIGHT_GRAY);
 			tableDetailsCommande.addCell(cell1);
 
-			cell1 = new PdfPCell(new Phrase("3 chaise, 3 tables", FontFactory.getFont("Arial", 11)));
+			cell1 = new PdfPCell(new Phrase("Chemise ZARA : 2, Table TV : 1, Service fruits : 1", FontFactory.getFont("Arial", 11)));
 			cell1.setHorizontalAlignment(Element.ALIGN_CENTER);
 			cell1.setBackgroundColor(BaseColor.LIGHT_GRAY);
 			tableDetailsCommande.addCell(cell1);
 
-			cell1 = new PdfPCell(new Phrase("chaise:50 dinares, table:80 dinares", FontFactory.getFont("Arial", 11)));
+			cell1 = new PdfPCell(new Phrase("Chemise ZARA : 160 DNT, Table TV : 200 DNT, Service fruits : 80 DNT", FontFactory.getFont("Arial", 11)));
 			cell1.setHorizontalAlignment(Element.ALIGN_CENTER);
 			cell1.setBackgroundColor(BaseColor.LIGHT_GRAY);
 			tableDetailsCommande.addCell(cell1);
 
-			cell1 = new PdfPCell(new Phrase("390 Dinares", FontFactory.getFont("Arial", 11)));
+			cell1 = new PdfPCell(new Phrase("440 Dinares", FontFactory.getFont("Arial", 11)));
 			cell1.setHorizontalAlignment(Element.ALIGN_CENTER);
 			cell1.setBackgroundColor(BaseColor.LIGHT_GRAY);
 			tableDetailsCommande.addCell(cell1);
 
-			cell1 = new PdfPCell(new Phrase("2021/04/01", FontFactory.getFont("Arial", 11)));
+			cell1 = new PdfPCell(new Phrase("2021/04/27", FontFactory.getFont("Arial", 11)));
 			cell1.setHorizontalAlignment(Element.ALIGN_CENTER);
 			cell1.setBackgroundColor(BaseColor.LIGHT_GRAY);
 			tableDetailsCommande.addCell(cell1);
@@ -108,11 +108,11 @@ public class Pdf_facture {
 			///////////////////////////////////////////////////////////////////////////////////////////////////
 
 			document.add(new Paragraph("Coordonnées client :"));
-			document.add(new Paragraph("Nom : Mohamed"));
-			document.add(new Paragraph("Prénom : Bouzid"));
+			document.add(new Paragraph("Nom : Mohamed Dhia"));
+			document.add(new Paragraph("Prénom : Sediri"));
 			document.add(new Paragraph("Adresse : Rue 8 Cité El Ghazzela - Ariana"));
 			document.add(new Paragraph("Téléphone : 22333444"));
-			document.add(new Paragraph("Nom Proprietaire : Mohamed Bouzid"));
+			document.add(new Paragraph("Nom Proprietaire : Mohamed Dhia Sediri"));
 			document.add(new Paragraph("Type de Paiement : En ligne"));
 			
 			document.close();
