@@ -1,6 +1,6 @@
 package dto;
 
-public class ClientDtoInput {  //gestion users Adem 
+public class ClientDtoInput {  //gestion livraison Ines 
 
 	private Long id;
 	private String nom;
