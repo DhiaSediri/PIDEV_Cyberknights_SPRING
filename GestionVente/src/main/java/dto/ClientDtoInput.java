@@ -1,6 +1,6 @@
 package dto;
 
-public class ClientDtoInput { //llllllllllllllllll
+public class ClientDtoInput {  //gestion users Adem 
 
 	private Long id;
 	private String nom;
