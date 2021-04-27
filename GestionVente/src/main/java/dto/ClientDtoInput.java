@@ -1,6 +1,6 @@
 package dto;
 
-public class ClientDtoInput {
+public class ClientDtoInput { //llllllllllllllllll
 
 	private Long id;
 	private String nom;
